@@ -116,6 +116,7 @@ GEM
       activesupport (~> 4.0)
       html-pipeline (~> 2.3)
       jekyll (~> 3.0)
+    jekyll-mermaid (1.0.0)
     jekyll-optional-front-matter (0.3.0)
       jekyll (~> 3.0)
     jekyll-paginate (1.1.0)
@@ -234,7 +235,9 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll
+  jekyll-feed (~> 0.6)
+  jekyll-mermaid
+  minima
   tzinfo-data
 
 BUNDLED WITH
