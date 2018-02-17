@@ -5,15 +5,8 @@ permalink: /about/
 search_omit: true
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Feel free to contact me: 
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
-
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+ * expend20@vfemail.net
+ * [gpg key](/assets/gpg.pub) 
+ * fingerprint: `EA30 FBE8 B5CD B500 DAC9  88A3 C527 A00B 0B4C 016C`  
