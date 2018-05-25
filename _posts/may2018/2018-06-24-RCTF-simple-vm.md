@@ -205,11 +205,8 @@ To do that, I put some new logs to our C sources, that will print count of succe
 Viola, we got flag:
 ```
 ....
-Input Flag:[31] rigth char = 5 (0x35) 7 (0x37)
 try 07a71bf084a93df7ce3def3ab1bd61f6...
-Input Flag:[31] rigth char = 5 (0x35) 9 (0x39)
 try 08a71bf084a93df7ce3def3ab1bd61f6...
-Input Flag:[31] rigth char = 9 (0x39) 7 (0x37)
 try 09a71bf084a93df7ce3def3ab1bd61f6...
 Input Flag:Right
 ```
@@ -219,4 +216,26 @@ Input Flag:Right
 
 My approach was not the easiest one, but also not the hardest one. The more fast approach was to figure out from sources, that 0x18 opcode is the key, and how this conditional opcode is correlated with input. The hardest one was to analyze VM more deeply and run bruteforcer directly on the reversed pseudocode.
 
-Time spent **6-8 hours**. 
+Time spent **6-8 hours**.
+
+### UPD:
+
+[Totally](http://shell-storm.org/blog/A-binary-analysis-count-me-if-you-can/) different approach can be used as well. The idea behind [it](https://github.com/wagiro/pintool/blob/master/README.md) is to instrument using [Intel's Pin tool](https://software.intel.com/en-us/articles/pin-a-dynamic-binary-instrumentation-tool) and count every instruction exectuion. Higher execution count will indicate the right execution flow.
+
+The task is completely solvable using Pin-approach. Complete bruteforce takes about 20mins, and requires some tuning to `pintool.py`:
+* Start from the end of flag, not from the begining 
+* Difference in instruction count is 100, but on last character diff = 28
+
+```
+V9a71bf084a93df7ce3def3ab1bd61f6 = 206080 difference 0 instructions
+W9a71bf084a93df7ce3def3ab1bd61f6 = 206080 difference 0 instructions
+X9a71bf084a93df7ce3def3ab1bd61f6 = 206080 difference 0 instructions
+Y9a71bf084a93df7ce3def3ab1bd61f6 = 206126 difference 46 instructions
+Z9a71bf084a93df7ce3def3ab1bd61f6 = 206080 difference 0 instructions
+09a71bf084a93df7ce3def3ab1bd61f6 = 206108 difference 28 instructions <<<< right solution
+19a71bf084a93df7ce3def3ab1bd61f6 = 206080 difference 0 instructions
+29a71bf084a93df7ce3def3ab1bd61f6 = 206080 difference 0 instructions
+39a71bf084a93df7ce3def3ab1bd61f6 = 206080 difference 0 instructions
+49a71bf084a93df7ce3def3ab1bd61f6 = 206080 difference 0 instructions
+```
+ 
