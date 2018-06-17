@@ -1,7 +1,5 @@
 import subprocess, re
 
-#output = subprocess.Popen(['ConsoleApplication2.exe < 1.txt'], stdout=subprocess.PIPE).communicate()[0]
-
 
 def checkIdx(s):
 
