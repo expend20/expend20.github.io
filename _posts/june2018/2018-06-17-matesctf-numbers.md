@@ -1,9 +1,9 @@
 ---
 layout: default
-title:  "[MatesCTF:numers] Using Z3 to solve math equations. "
+title:  "[MatesCTF:The Numbers] Using Z3 to solve math equations. "
 ---
 
-# [MatesCTF:numers] Using Z3 to solve math equations.
+# [MatesCTF:The Numbers] Using Z3 to solve math equations.
 
 
 ## Intro.
