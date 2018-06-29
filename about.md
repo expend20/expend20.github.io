@@ -13,5 +13,5 @@ Feel free to contact me:
  * [gpg key](/assets/gpg.pub) 
  * fingerprint: `EA30 FBE8 B5CD B500 DAC9  88A3 C527 A00B 0B4C 016C` 
 
-PS: Currently looking for a job related to re|pwn|pentest. ;-)
+**BTW: Currently looking for a job related to re/pwn/pentest. ;-)**
 
