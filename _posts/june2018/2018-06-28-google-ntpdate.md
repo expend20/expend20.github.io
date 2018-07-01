@@ -313,8 +313,117 @@ Ok, it works. But still there is no any kind of flag :( I had tried to send diff
 After [p4 team shared their solution](https://github.com/p4-team/ctf/blob/master/2018-06-23-google-ctf/apt42-part1/README.md), I realized that I needed to send `part1 flag` instead of `hello`. And this is not stupid guessing since this string was hardcoded and obfuscated in the binary itself, but never executed. So I would need to do more static analisys, to get the flag, that was my mistake.
 
 
+# UPD2:
 
+Here is [the script](/assets/files/ctf/2018/google/apt42p1/strings-dump.py) that dumps obfuscated strings from [asm listing](/assets/files/ctf/2018/google/apt42p1/list.txt). As you can see `part1 flag` is among of them:
+```
+[*] extracted: waitpid
+[*] extracted: /etc/krb5.conf
+[*] extracted: open
+[*] extracted: read
+[*] extracted: close
+[*] extracted: domain.google.com
+[*] extracted: strcasestr
+[*] extracted: __stack_chk_fail
+[*] extracted: 4242
+[*] extracted: mlwr-part1.ctfcompetition.com
+[*] extracted: getaddrinfo
+[*] extracted: signal
+[*] extracted: socket
+[*] extracted: connect
+[*] extracted: close
+[*] extracted: socket
+[*] extracted: setsockopt
+[*] extracted: htons
+[*] extracted: bind
+[*] extracted: close
+[*] extracted: listen
+[*] extracted: send
+[*] extracted: send
+[*] extracted: send
+[*] extracted: send
+[*] extracted: strlen
+[*] extracted: recv
+[*] extracted: recv
+[*] extracted: recv
+[*] extracted: recv
+[*] extracted: hello
+[*] extracted: part1 flag
+[*] extracted: stream
+[*] extracted: recv
+[*] extracted: send
+[*] extracted: __stack_chk_fail
+[*] extracted: close
+[*] extracted: close
+[*] extracted: close
+[*] extracted: close
+[*] extracted: accept
+[*] extracted: waitpid
+[*] extracted: __errno_location
+[*] extracted: close
+[*] extracted: syscall
+[*] extracted: close
+[*] extracted: waitpid
+[*] extracted: __errno_location
+[*] extracted: hello
+[*] extracted: exec
+[*] extracted: exec
+[*] extracted: strlen
+[*] extracted: strlen
+[*] extracted: syscall
+[*] extracted: error
+[*] extracted: sh
+[*] extracted: -c
+[*] extracted: stream
+[*] extracted: dup2
+[*] extracted: dup2
+[*] extracted: dup2
+[*] extracted: -c
+[*] extracted: sh
+[*] extracted: /bin/sh
+[*] extracted: execl
+[*] extracted: syscall
+[*] extracted: waitpid
+[*] extracted: __errno_location
+[*] extracted: la revedere
+[*] extracted: bg
+[*] extracted: bg
+[*] extracted: strlen
+[*] extracted: strlen
+[*] extracted: system
+[*] extracted: ok
+[*] extracted: rm
+[*] extracted: /proc/self/exe
+[*] extracted: readlink
+[*] extracted: unlink
+[*] extracted: ok
+[*] extracted: kill
+[*] extracted: syscall
+[*] extracted: error
+[*] extracted: upgrade
+[*] extracted: error
+[*] extracted: ok
+[*] extracted: close
+[*] extracted: nop
+[*] extracted: ok
+[*] extracted: error
+[*] extracted: __stack_chk_fail
+[*] extracted: close
+[*] extracted: sleep
+[*] extracted: gettimeofday
+[*] extracted: getpid
+[*] extracted: getppid
+[*] extracted: ELF
+[*] extracted: send
+[*] extracted: syscall
+[*] extracted: syscall
+[*] extracted: mmap
+[*] extracted: syscall
+[*] extracted: syscall
+[*] extracted: clone
+[*] extracted: munmap
 
+``` 
 
 
 
