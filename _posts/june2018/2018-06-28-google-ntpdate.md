@@ -1,12 +1,11 @@
 ---
-layout: default
+layout: post
 title:  "[Google CTF:APT42 - Part 1] Unfinished RE"
-
+comments: true
 ---
 
-# [Google CTF:APT42 - Part 1] Unfinished RE.
 
-Hello all, this is my unfinished write-up for the [challange](https://ctftime.org/task/6241) from [google ctf](https://capturetheflag.withgoogle.com). I know that this is a little bit dumb to post unfinished work, but I made some progress, and want to share it with someone ;)
+Hello all, this is my unfinished write-up for the [challenge](https://ctftime.org/task/6241) from [google ctf](https://capturetheflag.withgoogle.com). I know that this is a little bit dumb to post unfinished work, but I made some progress, and want to share it with someone ;)
 
 ## The task.
 
@@ -315,7 +314,7 @@ After [p4 team shared their solution](https://github.com/p4-team/ctf/blob/master
 
 # UPD2:
 
-Here is [the script](/assets/files/ctf/2018/google/apt42p1/strings-dump.py) that dumps obfuscated strings from [asm listing](/assets/files/ctf/2018/google/apt42p1/list.txt). As you can see `part1 flag` is among of them:
+Here is [the script](/assets/files/ctf/2018/google/apt42p1/strings-dump.py) that dumps obfuscated strings from asm listing. As you can see `part1 flag` is among of them:
 ```
 [*] extracted: waitpid
 [*] extracted: /etc/krb5.conf
