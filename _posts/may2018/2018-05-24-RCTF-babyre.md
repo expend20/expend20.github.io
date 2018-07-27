@@ -1,10 +1,10 @@
 ---
-layout: default
+layout: post
 title:  "[RCTF:babyre] RE without IDA."
 date:   2018-05-24 
+comments: true
 ---
 
-# [RCTF2018:babyre] RE without IDA.
 
 This is the task from [RCTF 2018](https://ctftime.org/event/624), babyre ([sources](/assets/files/ctf/2018/rctf/babyre.zip)).
 

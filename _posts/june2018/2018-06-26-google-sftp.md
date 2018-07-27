@@ -1,7 +1,7 @@
 ---
-layout: default
+layout: post
 title:  "[Google CTF:sftp] Randomized heap :D"
-
+comments: true
 ---
 
 

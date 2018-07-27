@@ -1,9 +1,9 @@
 ---
-layout: default
+layout: post
 title:  "[MatesCTF:The Numbers] Using Z3 to solve math equations. "
+comments: true
 ---
 
-# [MatesCTF:The Numbers] Using Z3 to solve math equations.
 
 
 ## Intro.

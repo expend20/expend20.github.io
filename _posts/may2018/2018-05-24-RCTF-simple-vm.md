@@ -1,10 +1,10 @@
 ---
-layout: default
+layout: post
 title:  "[RCTF:simple-vm] Solving simple VM."
 date:   2018-05-24 
+commnets: true
 ---
 
-# [RCTF:simple-vm] Solving simple VM.
 
 In case you are not familiar with VM-stuff, here is short description:
 > In code obfuscation, a virtual machine is a mechanism used to execute a different instruction set than the one used by the machine that runs the program.
