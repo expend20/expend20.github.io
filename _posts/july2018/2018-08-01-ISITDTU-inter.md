@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "[ISITDTU CTF:inter] Reversing inter.exe"
 comments: true
 ---
