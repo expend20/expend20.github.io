@@ -234,7 +234,7 @@ correct! 0x000000420B1A2E17 | .283654106647
 done!
 ```
 
-The last one will finally accepted as flag. 
+The last one was finally accepted as flag. 
 
 **noxCTF{Fu11_M00n-Th3_Bl1nd_0n3-420B1A2E17-B41dy}**
 
